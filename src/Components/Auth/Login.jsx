@@ -62,11 +62,8 @@ export default () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen w-screen bg-indigo-900">
+    <div className="flex items-center justify-center min-h-screen bg-indigo-900 overflow-hidden max-w-full">
       <div className="w-full max-w-md">
-        {/* <Logo
-          className="p-20 mx-auto"
-        /> */}
         <form
           onSubmit={handleSubmit}
           className="mt-8 overflow-hidden bg-white rounded-lg shadow-xl"
