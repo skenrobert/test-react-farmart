@@ -14,7 +14,7 @@ export default function Contact() {
   const navigate = useNavigate();
 
   if (seccion.access_token == "") {
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
   }
 
   const [user, setUser] = useState(

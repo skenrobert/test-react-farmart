@@ -24,7 +24,7 @@ function Usuariosi({}) {
   const navigate = useNavigate();
 
   if (seccion.access_token == "") {
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
   }
 
   function handleSubmit(e) {
@@ -70,7 +70,9 @@ function Usuariosi({}) {
   return (
     <div>
       <div className="flex flex-col">
-        <h1 className="mb-8 text-3xl font-bold">Test React Farmart</h1>
+      <h1 className="mb-8 text-3xl font-bold">
+        <span className="font-medium text-indigo-600"> Test React Farmart</span>
+        </h1>
 
         <div className="flex flex-col h-screen">
           <div className="md:flex">
@@ -83,7 +85,7 @@ function Usuariosi({}) {
               <div className="max-w-5xl mx-auto">
                 <form
                   onSubmit={handleSubmit}
-                  className="bg-indigo-800 p-10 mb-4"
+                  className="bg-indigo-900 p-10 mb-4 rounded shadow"
                 >
                   <h1 className="text-2xl text-white mb-3 font-bold">
                     Insertar Persona

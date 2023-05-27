@@ -22,6 +22,7 @@ const Create = () => {
       <div className="max-w-3xl overflow-hidden bg-white rounded shadow">
         <form name="createForm" onSubmit={handleSubmit}>
           <div className="flex flex-wrap p-8 -mb-8 -mr-6">
+            
             <TextInput
               className="w-full pb-8 pr-6 lg:w-1/2"
               label="First Name"
@@ -57,7 +58,7 @@ const Create = () => {
               // onChange={e => setData('password', e.target.value)}
             />
             <SelectInput
-              className="w-full pb-8 pr-6 lg:w-1/2"
+              className="w-60 pb-8 pr-6 lg:w-1/2"
               label="Owner"
               name="owner"
               // errors={errors.owner}

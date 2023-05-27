@@ -34,10 +34,6 @@ const router = createBrowserRouter([
     element: <Index />,
   },
   {
-    path: "/factura1",
-    element: <Create />,
-  },
-  {
     path: "/usuarios",
     element: <Usuarios />,
   },

@@ -30,7 +30,7 @@ export default function Usuarios() {
   const URL = url_backend + "users";
 
   if (seccion.access_token == "") {
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
 }
 
   const showData = async () => {

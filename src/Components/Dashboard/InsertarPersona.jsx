@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { AppContex } from "../../contex/AppContext";
 import TextInput from "../Shared/TextInput";
+import SelectInput from "../Shared/SelectInput";
 import { Form, useParams, useNavigate } from "react-router-dom";
 
 import MainMenu from "../Shared/MainMenu";
@@ -24,7 +25,7 @@ function InsertarPersona({}) {
   const navigate = useNavigate();
 
   if (seccion.access_token == "") {
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
   }
 
   function handleSubmit(e) {
@@ -70,7 +71,9 @@ function InsertarPersona({}) {
   return (
     <div>
       <div className="flex flex-col">
-        <h1 className="mb-8 text-3xl font-bold">Test React Farmart</h1>
+      <h1 className="mb-8 text-3xl font-bold">
+        <span className="font-medium text-indigo-600"> Test React Farmart</span>
+        </h1>
 
         <div className="flex flex-col h-screen">
           <div className="md:flex">
@@ -83,7 +86,7 @@ function InsertarPersona({}) {
               <div className="max-w-5xl mx-auto">
                 <form
                   onSubmit={handleSubmit}
-                  className="bg-indigo-800 p-10 mb-4"
+                  className="bg-indigo-900 p-10 mb-4 rounded shadow"
                 >
                   <h1 className="text-2xl text-white mb-3 font-bold">
                     Insertar Persona
@@ -131,18 +134,17 @@ function InsertarPersona({}) {
                         }}
                       />
 
-                      <TextInput
-                        className="p-0 w-full mb-2"
-                        label="Tipo Iden."
+                      <SelectInput
+                        className="w-72 pb-4 ml-28"
+                        // label="Tipo Iden."
                         name="tipoidentificacione"
-                        type="text"
-                        placeholder="Tipo Identificacione"
-                        //   errors={errors.password}
-                        value={tipoidentificacione}
-                        onChange={(e) => {
-                          setTipoIdentificacion(e.target.value);
-                        }}
-                      />
+                        // errors={errors.tipoidentificacione}
+                        // value={data.tipoidentificacione}
+                        // onChange={e => setData('tipoidentificacione', e.target.value)}
+                      >
+                        <option value="1">Cedula</option>
+                        <option value="2">Pasaporte</option>
+                      </SelectInput>
 
                       <TextInput
                         className="p-0 w-full mb-2"

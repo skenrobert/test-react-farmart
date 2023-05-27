@@ -30,7 +30,7 @@ export default function Personas() {
   const URL = url_backend + "personas";
 
   if (seccion.access_token == "") {
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
 }
 
   const showData = async () => {
