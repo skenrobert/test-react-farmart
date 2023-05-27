@@ -201,7 +201,7 @@ export default function Factura () {
             <div className="w-full h-full px-4 py-8 overflow-hidden overflow-y-auto md:p-12">
 
             <div className="table-responsive">
-                <Link to={'/formulas i/'}>
+                <Link to={''}>
                      <FcPlus className="w-8 h-8 mb-0 p-0 float-right" />
                 </Link>
             </div>
