@@ -33,7 +33,6 @@ export default function Usuario() {
     direccion: "",
     direccion2: "",
     celular: "",
-    email: "",
     cumpleanios: "",
     contactocelular: "",
     tipoidentificacione: "",

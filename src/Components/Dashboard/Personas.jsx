@@ -120,7 +120,11 @@ export default function Personas() {
 
           <FcEmptyTrash
             className="w-8 h-8 mb-0 p-0 float-right"
-            onClick={() => deleteData(row.id)}
+            onClick={() =>{
+              if (confirm('¿Estás seguro de que quieres eliminar esta persona?')) {
+                deleteData(row.id)
+                }
+              }}
           />
 
           <Link to={'/personase/'+row.id}>

@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import Logo from "../Shared/Logo";
 import LoadingButton from "../Shared/LoadingButton";
 import TextInput from "../Shared/TextInput";
 import { AppContex } from "../../contex/AppContext";

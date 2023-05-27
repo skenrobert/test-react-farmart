@@ -6,9 +6,9 @@ export default ({ name, className }) => {
       <svg
         className={className}
         xmlns="http://www.w3.org/2000/svg"
-        width="100"
-        height="100"
-        viewBox="0 0 100 100"
+        width="50"
+        height="50"
+        viewBox="0 0 50 50"
       >
         <g fillRule="nonzero">
           <path d="M46.173 19.967C49.927-1.838 19.797-.233 14.538.21c-.429.035-.648.4-.483.8 2.004 4.825 14.168 31.66 32.118 18.957zm13.18 1.636c1.269-.891 1.35-1.614.047-2.453l-2.657-1.71c-.94-.607-1.685-.606-2.532.129-5.094 4.42-7.336 9.18-8.211 15.24 1.597.682 3.55.79 5.265.328 1.298-4.283 3.64-8.412 8.088-11.534z" />
@@ -59,6 +59,8 @@ export default ({ name, className }) => {
       <svg
         className={className}
         xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="50"
         viewBox="0 0 20 20"
       >
         <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-5.6-4.29a9.95 9.95 0 0 1 11.2 0 8 8 0 1 0-11.2 0zm6.12-7.64l3.02-3.02 1.41 1.41-3.02 3.02a2 2 0 1 1-1.41-1.41z" />
@@ -83,9 +85,9 @@ export default ({ name, className }) => {
       <svg
         className={className}
         xmlns="http://www.w3.org/2000/svg"
-        width="100"
-        height="100"
-        viewBox="0 0 100 100"
+        width="50"
+        height="50"
+        viewBox="0 0 50 50"
       >
         <path
           fillRule="evenodd"
@@ -124,7 +126,7 @@ export default ({ name, className }) => {
       <svg
         className={className}
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
+        viewBox="0 0 19 19"
       >
         <path d="M18 9.87V20H2V9.87a4.25 4.25 0 0 0 3-.38V14h10V9.5a4.26 4.26 0 0 0 3 .37zM3 0h4l-.67 6.03A3.43 3.43 0 0 1 3 9C1.34 9 .42 7.73.95 6.15L3 0zm5 0h4l.7 6.3c.17 1.5-.91 2.7-2.42 2.7h-.56A2.38 2.38 0 0 1 7.3 6.3L8 0zm5 0h4l2.05 6.15C19.58 7.73 18.65 9 17 9a3.42 3.42 0 0 1-3.33-2.97L13 0z" />
       </svg>

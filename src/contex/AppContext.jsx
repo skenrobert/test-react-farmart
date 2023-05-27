@@ -1,7 +1,7 @@
 import { createContext } from "react" 
 import { useEffect, useState } from "react";
 
-import { tasks } from "../data/tasks";
+// import { tasks } from "../data/tasks";
 
 
 export const AppContex = createContext() // go have all variables and constant of you app
@@ -24,33 +24,33 @@ export function AppContextProvider(props) {
         access_token:"",
     }
 
-    const [mapTask, setmapTask] = useState(tasks);
+    // const [mapTask, setmapTask] = useState(tasks);
     const [seccion, setSeccion] = useState(usuario);
 
-  function createTask(tasktitle, textDescription) {
-    // go ro send en props createTask
+  // function createTask(tasktitle, textDescription) {
+  //   // go ro send en props createTask
 
-    const newTask = {
-      title: tasktitle,
-      id: mapTask.length +1,
-      description: textDescription,
-    };
+  //   const newTask = {
+  //     title: tasktitle,
+  //     id: mapTask.length +1,
+  //     description: textDescription,
+  //   };
 
 
-    setmapTask([...mapTask, newTask]); // create new array tasks and add task, create new array no change the main
-  }
+  //   setmapTask([...mapTask, newTask]); // create new array tasks and add task, create new array no change the main
+  // }
 
-  function deleteTask(id){
-    setmapTask(mapTask.filter(task => task.id !== id))
- }
+//   function deleteTask(id){
+//     setmapTask(mapTask.filter(task => task.id !== id))
+//  }
 
 
   return (
     <AppContex.Provider value={{ 
-        mapTask: mapTask,
-        deleteTask: deleteTask,
-        createTask: createTask,
-        x,
+        // mapTask: mapTask,
+        // deleteTask: deleteTask,
+        // createTask: createTask,
+        // x,
         url_backend,
         url_img,
         setSeccion: setSeccion,
