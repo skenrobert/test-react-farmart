@@ -20,8 +20,7 @@ import Usuarios from './Components/Auth/Usuarios.jsx'
 import Usuario from './Components/Auth/Usuario.jsx'
 import Usuariose from './Components/Auth/Usuariose.jsx'
 import Usuariosi from './Components/Auth/Usuariosi.jsx'
-import Index from '../src/element/Pages/Users/Index'
-import Create from '../src/element/Pages/Users/Create'
+import Factura from './Components/Dashboard/Factura';
 
 const router = createBrowserRouter([
   {
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/factura",
-    element: <Index />,
+    element: <Factura />,
   },
   {
     path: "/usuarios",
