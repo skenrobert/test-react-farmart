@@ -38,4 +38,12 @@ acuerdo a el código que seleccionen.
 usuario:kennyrmcali@gmail.com
 password: 12345678***
 
-1. Descargar el proyecto
+## La interfaz esta compuesta de 3 CRUD
+* Personas : esta completa
+* Facturas : no esta terminada
+* Usuarios : esta completa
+
+***nota: detalles la interfaz no es muy amigable con el diseño es mi primer Desarrollo React (Solo con la libreria, el framework nextjs(React) te ayuda con cosas mas de configuracion vas mas al desarrollo, como su propio enrutador).
+tengo detalles con el enrutador si miran con cuido, me enfoque en intentar de terminar la app, ver si al final corregia esos detalle pero no me gano el tiempo.***
+
+
