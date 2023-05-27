@@ -31,9 +31,9 @@ function EditarPersona({}) {
   const [error, setError] = useState(null);
   const { url_backend, url_img, seccion } = useContext(AppContex);
 
-//   if (seccion.access_token == "") {
-//     navigate('/', { replace: true });
-// }
+  if (seccion.access_token == "") {
+    navigate('/', { replace: true });
+}
 
   const [user, setUser] = useState(
     {

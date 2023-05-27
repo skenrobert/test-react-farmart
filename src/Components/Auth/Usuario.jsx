@@ -84,6 +84,7 @@ export default function Usuario() {
             setError("Hubo un error al obtener el usuario");
           }
         } catch (error) {
+          console.log(error)
           setError("No pudimos hacer la solicitud para obtener el usuario");
         }
       }

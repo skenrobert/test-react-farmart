@@ -57,7 +57,6 @@ export default function Contact() {
             setError(null);
             setIsLoading(false);
 
-            console.log(res.data);
 
             const resUser = {
               id: res.data.id,
