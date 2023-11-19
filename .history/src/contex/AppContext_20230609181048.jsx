@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 export const AppContex = createContext() 
 
 export function AppContextProvider(props) {
-    const url_backend ='http://localhost:85/devaneo-backend/public/api/'
-    const url_img = "http://localhost:85/devaneo-backend/public/images/img_api/"
+    const url_backend ='http://localhost:85/test-backend/public/api/'
+    const url_img = "http://localhost:85/test-backend/public/images/img_api/"
 
     const usuario = {
         id: 0,

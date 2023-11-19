@@ -61,7 +61,7 @@ function EditarPersona({}) {
   }
 
   const editData = async () => {
-    let URL = url_backend + "terceros/" + personaId
+    let URL = url_backend + "personas/" + personaId
 
     const data = new FormData();
     data.append("email", email);
@@ -98,7 +98,7 @@ function EditarPersona({}) {
 
   useEffect(() => {
     if (isLoading) {
-      let url = url_backend + "terceros/" + personaId
+      let url = url_backend + "personas/" + personaId
       async function fetchData() {
         try {
           const response = await fetch(url, {
@@ -112,7 +112,7 @@ function EditarPersona({}) {
               });
           if (response.ok) {
             const res = await response.json();
-            setImageUrl(url_img + 'terceros/' + res.data.imagen);
+            setImageUrl(url_img + 'personas/' + res.data.imagen);
             setError(null);
             setIsLoading(false);
 

@@ -20,7 +20,7 @@ const Button = ({ id }) => (
   </button>
 );
 
-export default function Personas() {
+export default function terceros() {
   //1- Configurar los hooks
   const [users, setUsers] = useState([]);
   const { url_backend, seccion } = useContext(AppContex);
@@ -114,7 +114,7 @@ export default function Personas() {
       grow: 3,
       cell: (row) => (
         <div className="text-center">
-          <Link to={'/personas/'+row.id}>
+          <Link to={'/terceros/'+row.id}>
               <FcSearch className="w-8 h-8 mb-0 p-0 float-left" />
             </Link>
 
@@ -127,7 +127,7 @@ export default function Personas() {
               }}
           />
 
-          <Link to={'/personase/'+row.id}>
+          <Link to={'/tercerose/'+row.id}>
               <FcEditImage className="w-8 h-8 mb-0 p-0 float-left" />
             </Link>
 
@@ -192,18 +192,18 @@ export default function Personas() {
             <div className="w-full h-full px-4 py-8 overflow-hidden overflow-y-auto md:p-12">
 
             <div className="table-responsive">
-                {/* <a href={`/personasi` } rel="noopener noreferrer">
+                {/* <a href={`/tercerosi` } rel="noopener noreferrer">
                   <FcPlus className="w-8 h-8 mb-0 p-0 float-right" />
                 </a>   */}
 
-                <Link to={'/personasi/'}>
+                <Link to={'/tercerosi/'}>
                      <FcPlus className="w-8 h-8 mb-0 p-0 float-right" />
                 </Link>
             </div>
 
               <div className="table-responsive">
                 <DataTable
-                  title="Lista de Personas"
+                  title="Lista de terceros"
                   columns={columns}
                   data={users}
                   theme="custom"

@@ -27,7 +27,7 @@ export default function Personas() {
   const navigate = useNavigate();
 
   //2- Funcion para mostrar los datos con fetch
-  const URL = url_backend + "terceros";
+  const URL = url_backend + "personas";
 
   if (seccion.access_token == "") {
     navigate('/', { replace: true });
